@@ -21,7 +21,7 @@ exports.handler = async (event) => {
     const body = {
       amount: value,
       currency: 'BRL',
-      description: String(description || `PIX R$ ${value.toFixed(2)}`),
+      description: String(description || `PIX Sushi R$ ${value.toFixed(2)}`),
       name: 'Pedido Site',
       email: 'pedido@example.com',
       document: '00011122299',
@@ -60,3 +60,4 @@ exports.handler = async (event) => {
     return { statusCode: 500, headers: cors, body: JSON.stringify({ success:false, message:'Erro interno' }) };
   }
 };
+
