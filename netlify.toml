@@ -1,0 +1,8 @@
+[build]
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/pix/emit"
+  to = "/.netlify/functions/pix-emit"
+  status = 200
+  force = true
